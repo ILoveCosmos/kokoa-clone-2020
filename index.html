@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Kokoa Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -18,7 +19,7 @@
       <div class="status-bar__column">
         <span>110%</span>
         <!-- Battery Icon -->
-        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
         <!-- Lighting Icon -->
         <i class="fas fa-bolt"></i>
       </div>
@@ -29,9 +30,9 @@
         If you have a Kokoa Account, log in with your email or phone number.
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+    <form id="login-form" action="friends.html" method="get">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log in" />
       <a href="#">Find Kokoa Account for Password</a>
     </form>
